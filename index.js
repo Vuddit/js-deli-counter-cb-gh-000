@@ -12,3 +12,10 @@ function nowServing (arr) {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine (line) {
+  var statement = `The line is currently: `
+  for (i = line.length; i > 0; i--) {
+    var statement = `${statement}${i}. ${line[i+1]}, `
+  }
+}
