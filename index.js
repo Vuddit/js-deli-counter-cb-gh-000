@@ -18,4 +18,9 @@ function currentLine (line) {
   for (i = line.length; i > 0; i--) {
     var statement = `${statement}${i}. ${line[i+1]}, `
   }
+  if (line.length > 0) {
+    return statement
+  } else {
+    return "The line is currently empty."
+  }
 }
