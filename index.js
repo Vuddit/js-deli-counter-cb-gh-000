@@ -1,3 +1,3 @@
 function takeANumber (line, name) {
-  line.push("name")
+  line.push(name)
 }
