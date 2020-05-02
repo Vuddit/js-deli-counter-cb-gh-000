@@ -18,6 +18,7 @@ function currentLine (line) {
   for (let i = line.length; i > 0; i--) {
     const n = 2
     var statement = `${statement}, ${n}. ${line[n-1]}`
+    n--
   }
   if (line.length > 0) {
     return statement
