@@ -16,8 +16,9 @@ function nowServing (arr) {
 function currentLine (line) {
   var statement = `The line is currently: 1. ${line[0]}`
   for (let i = line.length; i > 1; i--) {
-    const n = 2
+    var n = 2
     var statement = `${statement}, ${n}. ${line[n-1]}`
+    n++;
   }
   if (line.length > 0) {
     return statement
